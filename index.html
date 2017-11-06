@@ -7,7 +7,7 @@
     <title>event & wedding</title>
     <style>
         body {
-            background-color: #DEDEDE;
+            background-color: #DBDBDB;
         }
 
         .content {
@@ -17,6 +17,7 @@
         }
 
         .container {
+            position: relative;
             display: flex;
             justify-content: center;
             max-width: 800px
@@ -27,9 +28,51 @@
             height: auto;
         }
 
+        .link-1,
+        .link-2{
+            position: absolute;
+            display: block;
+            width: 80px;
+            height: 80px;
+            top: 46%;
+            outline: none;
+        }
+
+        .link-1{
+            left: 35%;
+        }
+
+        .link-2{
+            right: 35%;
+        }
+
         @media (max-width: 880px) {
             img {
                 width: 100%;
+            }
+        }
+        
+        @media (max-width: 561px) {
+            .link-1,
+            .link-2{
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        @media (max-width: 431px) {
+            .link-1,
+            .link-2{
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        @media (max-width: 341px) {
+            .link-1,
+            .link-2{
+                width: 35px;
+                height: 35px;
             }
         }
 
@@ -40,7 +83,10 @@
 
 <div class="content">
     <div class="container">
-        <img src="images/300.png">
+        <img src="images/400.jpg">
+
+        <a class="link-1" href="https://facebook.com"></a>
+        <a class="link-2" href="https://vk.com"></a>
     </div>
 </div>
 
