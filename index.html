@@ -8,8 +8,13 @@
     <style>
         body {
             background-color: #E4E1DD;
+            padding: 0;
+            margin: 0;
+            position: relative;
+
         }
 
+     
         .content {
             display: flex;
             justify-content: center;
@@ -18,10 +23,10 @@
 
         .container {
             position: relative;
-            display: flex;
-            justify-content: center;
+            display: block;
             max-width: 800px
         }
+
 
         img {
             display: block;
@@ -66,6 +71,10 @@
                 width: 48px;
                 height: 48px;
             }
+
+            .content {
+                align-items: center;
+            }
         }
 
         @media (max-width: 341px) {
@@ -83,7 +92,7 @@
 
 <div class="content">
     <div class="container">
-        <img src="images/500.png">
+        <img src="images/600.png">
 
         <a class="link-1" href="https://facebook.com"></a>
         <a class="link-2" href="https://vk.com"></a>
